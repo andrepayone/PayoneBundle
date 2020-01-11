@@ -20,8 +20,8 @@
     ],
     "support": {
         "email": "support@cakasim.de",
-        "issues": "https://github.com/Cakasim/CakasimPayoneBundle/issues",
-        "source": "https://github.com/Cakasim/CakasimPayoneBundle"
+        "issues": "https://github.com/Cakasim/PayoneBundle/issues",
+        "source": "https://github.com/Cakasim/PayoneBundle"
     },
     "minimum-stability": "stable",
     "require": {
@@ -31,12 +31,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Cakasim\\Symfony\\PayoneBundle\\": "src/"
+            "Cakasim\\Symfony\\Bundle\\PayoneBundle\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Cakasim\\Symfony\\PayoneBundle\\Tests\\": "tests/"
+            "Cakasim\\Symfony\\Bundle\\PayoneBundle\\Tests\\": "tests/"
         }
     }
 }

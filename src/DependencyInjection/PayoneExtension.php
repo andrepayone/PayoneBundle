@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Symfony\PayoneBundle\DependencyInjection;
+namespace Cakasim\Symfony\Bundle\PayoneBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
@@ -10,7 +10,7 @@ use Symfony\Component\DependencyInjection\Extension\Extension;
 /**
  * @author Fabian Böttcher <me@cakasim.de>
  */
-class CakasimPayoneExtension extends Extension
+class PayoneExtension extends Extension
 {
     /**
      * {@inheritdoc}
