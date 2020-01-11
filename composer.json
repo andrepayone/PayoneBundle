@@ -1,0 +1,38 @@
+{
+    "name": "cakasim/payone-symfony-bundle",
+    "description": "A Symfony bundle that provides PAYONE payment integration for your app.",
+    "type": "symfony-bundle",
+    "keywords": [
+        "payone",
+        "symfony",
+        "sdk"
+    ],
+    "homepage": "https://cakasim.de",
+    "readme": "README.md",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fabian Böttcher",
+            "email": "me@cakasim.de",
+            "homepage": "https://cakasim.de",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "support@cakasim.de",
+        "issues": "https://github.com/Cakasim/CakasimPayoneBundle/issues",
+        "source": "https://github.com/Cakasim/CakasimPayoneBundle"
+    },
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Cakasim\\Symfony\\PayoneBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Cakasim\\Symfony\\PayoneBundle\\Tests\\": "tests/"
+        }
+    }
+}
