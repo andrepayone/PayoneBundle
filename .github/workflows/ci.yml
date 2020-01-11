@@ -1,0 +1,32 @@
+name: CI
+on: [push, pull_request]
+jobs:
+  run:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        php: ['7.2', '7.3', '7.4']
+
+    name: ${{ matrix.os }} with PHP ${{ matrix.php }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+
+      - name: Install PHP
+        uses: shivammathur/setup-php@master
+        with:
+          php-version: ${{ matrix.php }}
+          extensions: mbstring, xdebug
+
+      - name: Download PHP-CS-Fixer
+        run: |
+          wget -O phpcsf --no-verbose https://cs.symfony.com/download/php-cs-fixer-v2.phar
+          chmod +x phpcsf
+          ./phpcsf --version
+
+      - name: Composer Install
+        run: composer install --prefer-dist --no-progress --no-suggest
+
+      - name: Run Coding Style Checks
+        run: ./phpcsf -v fix --dry-run --allow-risky=yes
