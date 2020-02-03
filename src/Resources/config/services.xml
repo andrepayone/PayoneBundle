@@ -7,5 +7,53 @@
 
     <services>
         <defaults autowire="true" />
+
+        <service id="payone.sdk" class="Cakasim\Payone\Sdk\Sdk" public="true" />
+        <service id="Cakasim\Payone\Sdk\Sdk" alias="payone.sdk" />
+
+        <service id="payone.service.log" class="Cakasim\Payone\Sdk\Log\Service" public="true" />
+        <service id="Cakasim\Payone\Sdk\Log\Service" alias="payone.service.log" public="true" />
+
+        <service id="payone.service.http" class="Cakasim\Payone\Sdk\Http\Service" public="true" />
+        <service id="Cakasim\Payone\Sdk\Http\Service" alias="payone.service.http" public="true" />
+
+        <service id="payone.service.api" class="Cakasim\Payone\Sdk\Api\Service" public="true" />
+        <service id="Cakasim\Payone\Sdk\Api\Service" alias="payone.service.api" public="true" />
+
+        <service id="payone.service.notification" class="Cakasim\Payone\Sdk\Notification\Service" public="true" />
+        <service id="Cakasim\Payone\Sdk\Notification\Service" alias="payone.service.notification" public="true" />
+
+        <service id="payone.service.redirect" class="Cakasim\Payone\Sdk\Redirect\Service" public="true" />
+        <service id="Cakasim\Payone\Sdk\Redirect\Service" alias="payone.service.redirect" public="true" />
+
+        <service id="payone.config" class="Cakasim\Payone\Sdk\Config\Config" public="true" />
+        <service id="Cakasim\Payone\Sdk\Config\ConfigInterface" alias="payone.config" public="true" />
+
+        <!-- PSR-17 HTTP Factories -->
+        <service id="Psr\Http\Message\UriFactoryInterface" class="Cakasim\Payone\Sdk\Http\Factory\UriFactory" />
+        <service id="Psr\Http\Message\StreamFactoryInterface" class="Cakasim\Payone\Sdk\Http\Factory\StreamFactory" />
+        <service id="Psr\Http\Message\RequestFactoryInterface" class="Cakasim\Payone\Sdk\Http\Factory\RequestFactory" />
+        <service id="Psr\Http\Message\ResponseFactoryInterface" class="Cakasim\Payone\Sdk\Http\Factory\ResponseFactory" />
+
+        <!-- PSR-18 HTTP Client -->
+        <service id="Psr\Http\Client\ClientInterface" class="Cakasim\Payone\Sdk\Http\Client\StreamClient" />
+
+        <!-- API Component-->
+        <service id="Cakasim\Payone\Sdk\Api\Format\EncoderInterface" class="Cakasim\Payone\Sdk\Api\Format\Encoder" />
+        <service id="Cakasim\Payone\Sdk\Api\Format\DecoderInterface" class="Cakasim\Payone\Sdk\Api\Format\Decoder" />
+        <service id="Cakasim\Payone\Sdk\Api\Client\ClientInterface" class="Cakasim\Payone\Sdk\Api\Client\Client" />
+
+        <!-- Notification Component -->
+        <service id="Cakasim\Payone\Sdk\Notification\Processor\ProcessorInterface" class="Cakasim\Payone\Sdk\Notification\Processor\Processor" />
+        <service id="Cakasim\Payone\Sdk\Notification\Handler\HandlerManagerInterface" class="Cakasim\Payone\Sdk\Notification\Handler\HandlerManager" />
+
+        <!-- Redirect Component -->
+        <service id="Cakasim\Payone\Sdk\Redirect\Token\TokenFactoryInterface" class="Cakasim\Payone\Sdk\Redirect\Token\TokenFactory" />
+        <service id="Cakasim\Payone\Sdk\Redirect\Token\Format\EncoderInterface" class="Cakasim\Payone\Sdk\Redirect\Token\Format\Encoder" />
+        <service id="Cakasim\Payone\Sdk\Redirect\Token\Format\DecoderInterface" class="Cakasim\Payone\Sdk\Redirect\Token\Format\Decoder" />
+        <service id="Cakasim\Payone\Sdk\Redirect\Token\Format\SignerInterface" class="Cakasim\Payone\Sdk\Redirect\Token\Format\Signer" />
+        <service id="Cakasim\Payone\Sdk\Redirect\UrlGenerator\UrlGeneratorInterface" class="Cakasim\Payone\Sdk\Redirect\UrlGenerator\UrlGenerator" />
+        <service id="Cakasim\Payone\Sdk\Redirect\Handler\HandlerManagerInterface" class="Cakasim\Payone\Sdk\Redirect\Handler\HandlerManager" />
+        <service id="Cakasim\Payone\Sdk\Redirect\Processor\ProcessorInterface" class="Cakasim\Payone\Sdk\Redirect\Processor\Processor" />
     </services>
 </container>
