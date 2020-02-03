@@ -12,24 +12,24 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cakasim/php-payone-sdk.git",
-                "reference": "1d6ad425f7568eeaec40465725de1f95d30dda0e"
+                "reference": "aaf888721b4dc2036f74a10533988de4950b0517"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cakasim/php-payone-sdk/zipball/1d6ad425f7568eeaec40465725de1f95d30dda0e",
-                "reference": "1d6ad425f7568eeaec40465725de1f95d30dda0e",
+                "url": "https://api.github.com/repos/Cakasim/php-payone-sdk/zipball/aaf888721b4dc2036f74a10533988de4950b0517",
+                "reference": "aaf888721b4dc2036f74a10533988de4950b0517",
                 "shasum": ""
             },
             "require": {
+                "ext-gmp": "*",
+                "ext-json": "*",
+                "ext-openssl": "*",
                 "php": "^7.1",
                 "psr/container": "^1.0",
                 "psr/http-client": "^1.0",
                 "psr/http-factory": "^1.0",
                 "psr/http-message": "^1.0",
                 "psr/log": "^1.1"
-            },
-            "suggest": {
-                "ext-curl": "Required in order to use the cURL HTTP driver."
             },
             "type": "library",
             "autoload": {
@@ -56,7 +56,7 @@
                 "payone",
                 "sdk"
             ],
-            "time": "2020-01-08T00:32:13+00:00"
+            "time": "2020-02-02T19:46:41+00:00"
         },
         {
             "name": "psr/cache",
