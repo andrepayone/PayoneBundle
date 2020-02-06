@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "19ab529f07aa265582567adcc51e43a5",
+    "content-hash": "a79a946e1fad522e1826b141aceeb979",
     "packages": [
         {
             "name": "cakasim/payone-sdk",
-            "version": "dev-develop",
+            "version": "v0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cakasim/php-payone-sdk.git",
-                "reference": "aaf888721b4dc2036f74a10533988de4950b0517"
+                "reference": "caff45b9f3a4292bab80ade0187b2eaa9866f0ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cakasim/php-payone-sdk/zipball/aaf888721b4dc2036f74a10533988de4950b0517",
-                "reference": "aaf888721b4dc2036f74a10533988de4950b0517",
+                "url": "https://api.github.com/repos/Cakasim/php-payone-sdk/zipball/caff45b9f3a4292bab80ade0187b2eaa9866f0ca",
+                "reference": "caff45b9f3a4292bab80ade0187b2eaa9866f0ca",
                 "shasum": ""
             },
             "require": {
@@ -56,7 +56,7 @@
                 "payone",
                 "sdk"
             ],
-            "time": "2020-02-02T19:46:41+00:00"
+            "time": "2020-02-05T21:01:46+00:00"
         },
         {
             "name": "psr/cache",
@@ -1370,9 +1370,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "cakasim/payone-sdk": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
