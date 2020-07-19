@@ -39,26 +39,30 @@ class PayoneExtension extends Extension
      */
     protected function mapBundleConfig(array $config): array
     {
-        return [
-            'api.endpoint' => $config['api']['endpoint'],
-            'api.merchant_id' => $config['api']['merchant_id'],
-            'api.portal_id' => $config['api']['portal_id'],
-            'api.key' => $config['api']['key'],
-            'api.key_hash_type' => $config['api']['key_hash_type'],
-            'api.sub_account_id' => $config['api']['sub_account_id'],
-            'api.mode' => $config['api']['mode'],
-            'api.integrator_name' => $config['api']['integrator_name'],
-            'api.integrator_version' => $config['api']['integrator_version'],
+        $mappedConfig = [
+            'api.endpoint' => $config['api']['endpoint'] ?? null,
+            'api.merchant_id' => $config['api']['merchant_id'] ?? null,
+            'api.portal_id' => $config['api']['portal_id'] ?? null,
+            'api.key' => $config['api']['key'] ?? null,
+            'api.key_hash_type' => $config['api']['key_hash_type'] ?? null,
+            'api.sub_account_id' => $config['api']['sub_account_id'] ?? null,
+            'api.mode' => $config['api']['mode'] ?? null,
+            'api.integrator_name' => $config['api']['integrator_name'] ?? null,
+            'api.integrator_version' => $config['api']['integrator_version'] ?? null,
 
-            'notification.sender_address_whitelist' => $config['notification']['sender_address_whitelist'],
+            'notification.sender_address_whitelist' => $config['notification']['sender_address_whitelist'] ?? null,
 
-            'redirect.url' => $config['redirect']['url'],
-            'redirect.token_lifetime' => $config['redirect']['token_lifetime'],
-            'redirect.token_encryption_method' => $config['redirect']['token_encryption_method'],
-            'redirect.token_encryption_key' => $config['redirect']['token_encryption_key'],
-            'redirect.token_signing_algo' => $config['redirect']['token_signing_algo'],
-            'redirect.token_signing_key' => $config['redirect']['token_signing_key'],
+            'redirect.url' => $config['redirect']['url'] ?? null,
+            'redirect.token_lifetime' => $config['redirect']['token_lifetime'] ?? null,
+            'redirect.token_encryption_method' => $config['redirect']['token_encryption_method'] ?? null,
+            'redirect.token_encryption_key' => $config['redirect']['token_encryption_key'] ?? null,
+            'redirect.token_signing_algo' => $config['redirect']['token_signing_algo'] ?? null,
+            'redirect.token_signing_key' => $config['redirect']['token_signing_key'] ?? null,
         ];
+
+        return array_filter($mappedConfig, function ($value) {
+            return null !== $value;
+        });
     }
 
     /**
