@@ -4,24 +4,23 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a79a946e1fad522e1826b141aceeb979",
+    "content-hash": "25d7b3b514f4525fc1bbf412cd1abbed",
     "packages": [
         {
             "name": "cakasim/payone-sdk",
-            "version": "v0.1.0",
+            "version": "0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cakasim/php-payone-sdk.git",
-                "reference": "caff45b9f3a4292bab80ade0187b2eaa9866f0ca"
+                "reference": "c2669bab9a6c01b8408b764e615bd99d4cdec3a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cakasim/php-payone-sdk/zipball/caff45b9f3a4292bab80ade0187b2eaa9866f0ca",
-                "reference": "caff45b9f3a4292bab80ade0187b2eaa9866f0ca",
+                "url": "https://api.github.com/repos/Cakasim/php-payone-sdk/zipball/c2669bab9a6c01b8408b764e615bd99d4cdec3a4",
+                "reference": "c2669bab9a6c01b8408b764e615bd99d4cdec3a4",
                 "shasum": ""
             },
             "require": {
-                "ext-gmp": "*",
                 "ext-json": "*",
                 "ext-openssl": "*",
                 "php": "^7.1",
@@ -30,6 +29,11 @@
                 "psr/http-factory": "^1.0",
                 "psr/http-message": "^1.0",
                 "psr/log": "^1.1"
+            },
+            "suggest": {
+                "cakasim/payone-sdk-http-message": "Provides the default HTTP message implementation.",
+                "cakasim/payone-sdk-silent-logger": "Provides the default logger implementation.",
+                "cakasim/payone-sdk-stream-client": "Provides the default HTTP client implementation."
             },
             "type": "library",
             "autoload": {
@@ -56,7 +60,7 @@
                 "payone",
                 "sdk"
             ],
-            "time": "2020-02-05T21:01:46+00:00"
+            "time": "2020-07-18T10:19:07+00:00"
         },
         {
             "name": "psr/cache",
