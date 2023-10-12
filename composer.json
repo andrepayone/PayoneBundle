@@ -35,7 +35,7 @@
         "symfony/config": "v5.4.26",
         "symfony/dependency-injection": "v5.4.29",
         "symfony/contracts": "^2.0",
-        "andrepayone/payone-sdk": "0.3.0"
+        "andrepayone/payone-sdk": "0.3.1"
     },
     "autoload": {
         "psr-4": {
