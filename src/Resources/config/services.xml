@@ -8,40 +8,40 @@
     <services>
         <defaults autowire="true" />
 
-        <service id="payone.sdk" class="Cakasim\Payone\Sdk\Sdk" public="true" />
-        <service id="Cakasim\Payone\Sdk\Sdk" alias="payone.sdk" />
+        <service id="payone.sdk" class="Payone\Sdk\Sdk" public="true" />
+        <service id="Payone\Sdk\Sdk" alias="payone.sdk" />
 
-        <service id="payone.service.http" class="Cakasim\Payone\Sdk\Http\Service" public="true" />
-        <service id="Cakasim\Payone\Sdk\Http\Service" alias="payone.service.http" public="true" />
+        <service id="payone.service.http" class="Payone\Sdk\Http\Service" public="true" />
+        <service id="Payone\Sdk\Http\Service" alias="payone.service.http" public="true" />
 
-        <service id="payone.service.api" class="Cakasim\Payone\Sdk\Api\Service" public="true" />
-        <service id="Cakasim\Payone\Sdk\Api\Service" alias="payone.service.api" public="true" />
+        <service id="payone.service.api" class="Payone\Sdk\Api\Service" public="true" />
+        <service id="Payone\Sdk\Api\Service" alias="payone.service.api" public="true" />
 
-        <service id="payone.service.notification" class="Cakasim\Payone\Sdk\Notification\Service" public="true" />
-        <service id="Cakasim\Payone\Sdk\Notification\Service" alias="payone.service.notification" public="true" />
+        <service id="payone.service.notification" class="Payone\Sdk\Notification\Service" public="true" />
+        <service id="Payone\Sdk\Notification\Service" alias="payone.service.notification" public="true" />
 
-        <service id="payone.service.redirect" class="Cakasim\Payone\Sdk\Redirect\Service" public="true" />
-        <service id="Cakasim\Payone\Sdk\Redirect\Service" alias="payone.service.redirect" public="true" />
+        <service id="payone.service.redirect" class="Payone\Sdk\Redirect\Service" public="true" />
+        <service id="Payone\Sdk\Redirect\Service" alias="payone.service.redirect" public="true" />
 
-        <service id="payone.config" class="Cakasim\Payone\Sdk\Config\Config" public="true" />
-        <service id="Cakasim\Payone\Sdk\Config\ConfigInterface" alias="payone.config" public="true" />
+        <service id="payone.config" class="Payone\Sdk\Config\Config" public="true" />
+        <service id="Payone\Sdk\Config\ConfigInterface" alias="payone.config" public="true" />
 
         <!-- API Component-->
-        <service id="Cakasim\Payone\Sdk\Api\Format\EncoderInterface" class="Cakasim\Payone\Sdk\Api\Format\Encoder" />
-        <service id="Cakasim\Payone\Sdk\Api\Format\DecoderInterface" class="Cakasim\Payone\Sdk\Api\Format\Decoder" />
-        <service id="Cakasim\Payone\Sdk\Api\Client\ClientInterface" class="Cakasim\Payone\Sdk\Api\Client\Client" />
+        <service id="Payone\Sdk\Api\Format\EncoderInterface" class="Payone\Sdk\Api\Format\Encoder" />
+        <service id="Payone\Sdk\Api\Format\DecoderInterface" class="Payone\Sdk\Api\Format\Decoder" />
+        <service id="Payone\Sdk\Api\Client\ClientInterface" class="Payone\Sdk\Api\Client\Client" />
 
         <!-- Notification Component -->
-        <service id="Cakasim\Payone\Sdk\Notification\Processor\ProcessorInterface" class="Cakasim\Payone\Sdk\Notification\Processor\Processor" />
-        <service id="Cakasim\Payone\Sdk\Notification\Handler\HandlerManagerInterface" class="Cakasim\Payone\Sdk\Notification\Handler\HandlerManager" />
+        <service id="Payone\Sdk\Notification\Processor\ProcessorInterface" class="Payone\Sdk\Notification\Processor\Processor" />
+        <service id="Payone\Sdk\Notification\Handler\HandlerManagerInterface" class="Payone\Sdk\Notification\Handler\HandlerManager" />
 
         <!-- Redirect Component -->
-        <service id="Cakasim\Payone\Sdk\Redirect\Token\TokenFactoryInterface" class="Cakasim\Payone\Sdk\Redirect\Token\TokenFactory" />
-        <service id="Cakasim\Payone\Sdk\Redirect\Token\Format\EncoderInterface" class="Cakasim\Payone\Sdk\Redirect\Token\Format\Encoder" />
-        <service id="Cakasim\Payone\Sdk\Redirect\Token\Format\DecoderInterface" class="Cakasim\Payone\Sdk\Redirect\Token\Format\Decoder" />
-        <service id="Cakasim\Payone\Sdk\Redirect\Token\Format\SignerInterface" class="Cakasim\Payone\Sdk\Redirect\Token\Format\Signer" />
-        <service id="Cakasim\Payone\Sdk\Redirect\UrlGenerator\UrlGeneratorInterface" class="Cakasim\Payone\Sdk\Redirect\UrlGenerator\UrlGenerator" />
-        <service id="Cakasim\Payone\Sdk\Redirect\Handler\HandlerManagerInterface" class="Cakasim\Payone\Sdk\Redirect\Handler\HandlerManager" />
-        <service id="Cakasim\Payone\Sdk\Redirect\Processor\ProcessorInterface" class="Cakasim\Payone\Sdk\Redirect\Processor\Processor" />
+        <service id="Payone\Sdk\Redirect\Token\TokenFactoryInterface" class="Payone\Sdk\Redirect\Token\TokenFactory" />
+        <service id="Payone\Sdk\Redirect\Token\Format\EncoderInterface" class="Payone\Sdk\Redirect\Token\Format\Encoder" />
+        <service id="Payone\Sdk\Redirect\Token\Format\DecoderInterface" class="Payone\Sdk\Redirect\Token\Format\Decoder" />
+        <service id="Payone\Sdk\Redirect\Token\Format\SignerInterface" class="Payone\Sdk\Redirect\Token\Format\Signer" />
+        <service id="Payone\Sdk\Redirect\UrlGenerator\UrlGeneratorInterface" class="Payone\Sdk\Redirect\UrlGenerator\UrlGenerator" />
+        <service id="Payone\Sdk\Redirect\Handler\HandlerManagerInterface" class="Payone\Sdk\Redirect\Handler\HandlerManager" />
+        <service id="Payone\Sdk\Redirect\Processor\ProcessorInterface" class="Payone\Sdk\Redirect\Processor\Processor" />
     </services>
 </container>
